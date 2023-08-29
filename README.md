@@ -21,6 +21,6 @@ To get started with DogyGear, simply visit our website at [www.dogygear.com](htt
 
 ## Contact Us
 
-For inquiries, please contact us at contact@doggodelight.com.
+For inquiries, please contact us at contact@dogygear.com.
 
 Join us in celebrating the joy and love that dogs bring to our lives. Give your furry friend the delight they deserve.
