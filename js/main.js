@@ -1420,9 +1420,9 @@ window.Riode = {};
             Riode.Minipopup.open({
                 message: 'Someone Purchased',
                 productClass: 'product-cart',
-                name: 'Daisy Shoes Sonia by Sonia-Blue',
-                nameLink: 'product.html',
-                imageSrc: 'images/cart/product-1.jpg',
+                name: 'Dog Harness by DogyGear',
+                nameLink: 'dogy-gear-shop.html',
+                imageSrc: '../images/dogygear/harness2.png',
                 isPurchased: true
             }, function ($box) {
                 Riode.ratingTooltip($box[0]);
