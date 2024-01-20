@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <title>DogyGear - About  Us</title>
+    <title>DogyGear - Cart</title>
 
     <meta name="keywords" content="HTML5 Template" />
     <meta name="description" content="Riode - Ultimate eCommerce Template">
@@ -16,7 +17,7 @@
 
     <script>
         WebFontConfig = {
-            google: { families: [ 'Poppins:300,400,500,600,700' ] }
+            google: { families: [ 'Poppins:400,500,600,700' ] }
         };
         ( function ( d ) {
             var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
@@ -32,7 +33,6 @@
 
     <!-- Plugins CSS File -->
     <link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css">
-    <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl.carousel.min.css">
 
     <link rel="stylesheet" type="text/css" href="vendor/sticky-icon/stickyicon.css">
 
@@ -41,8 +41,7 @@
 </head>
 
 <body>
-
-    <div class="page-wrapper" style="background-color: #151515;">
+    <div class="page-wrapper">
         <header class="header header-border">
             <!-- End HeaderTop -->
             <div class="header-middle sticky-header fix-top sticky-content">
@@ -99,233 +98,202 @@
             </div>
         </header>
         <!-- End Header -->
-        <main class="main">
-            <nav class="breadcrumb-nav">
-                <div class="container">
-                    <ul class="breadcrumb">
-                        <li><a href="index.html"><i class="d-icon-home"></i></a></li>
-                        <li>About Us</li>
-                    </ul>
+        <main class="main cart">
+            <div class="page-content pt-7 pb-10">
+                <div class="step-by pr-4 pl-4">
+                    <h3 class="title title-simple title-step active"><a href="cart.html">1. Shopping Cart</a></h3>
+                    <h3 class="title title-simple title-step"><a href="checkout.html">2. Checkout</a></h3>
+                    <h3 class="title title-simple title-step"><a href="order.html">3. Order Complete</a></h3>
                 </div>
-            </nav>
-            <div class="page-header pl-4 pr-4" style="background-image: url(./images/dogygear/D\ \(149\)-PhotoRoom.png-PhotoRoom.png)">
-                <h3 class="page-subtitle font-weight-bold">Welcome to DogyGear</h3>
-                <h1 class="page-title font-weight-bold lh-1 text-white text-capitalize">Our Services</h1>
-                <p class="page-desc text-white mb-0">We provide Best Quality product for your furry guys<br>Best dog products you'll ever buy</p>
-            </div>
-            <div class="page-content mt-10 pt-10">
-                <section class="about-section pb-10 appear-animate">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 mb-10 mb-lg-4">
-                                <h5 class="section-subtitle lh-2 ls-md font-weight-normal">01. What We Do</h5>
-                                <h3 class="section-title lh-1 font-weight-bold">Provide perfect and practical services
-                                </h3>
-                                <p class="section-desc">Lorem quis bibendum auctar, nisi elit consequat ipsum, nec
-                                    sagittis sem nibh id elit.</p>
+                <div class="container mt-7 mb-2">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 pr-lg-4">
+                            <table class="shop-table cart-table">
+                                <thead>
+                                    <tr>
+                                        <th><span>Product</span></th>
+                                        <th></th>
+                                        <th><span>Price</span></th>
+                                        <th><span>quantity</span></th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product-thumbnail">
+                                            <figure>
+                                                <a href="product-simple.html">
+                                                    <img src="images/products/product18.jpg" width="100" height="100"
+                                                        alt="product">
+                                                </a>
+                                            </figure>
+                                        </td>
+                                        <td class="product-name">
+                                            <div class="product-name-section">
+                                                <a href="product-simple.html">Converse Training Shoes</a>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <span class="amount">$129.99</span>
+                                        </td>
+                                        <td class="product-quantity">
+                                            <div class="input-group">
+                                                <button class="quantity-minus d-icon-minus"></button>
+                                                <input class="quantity form-control" type="number" min="1"
+                                                    max="1000000">
+                                                <button class="quantity-plus d-icon-plus"></button>
+                                            </div>
+                                        </td>
+                                        <td class="product-price">
+                                            <span class="amount">$129.99</span>
+                                        </td>
+                                        <td class="product-close">
+                                            <a href="#" class="product-remove" title="Remove this product">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-thumbnail">
+                                            <figure>
+                                                <a href="product-simple.html">
+                                                    <img src="images/products/product19.jpg" width="100" height="100"
+                                                        alt="product">
+                                                </a>
+                                            </figure>
+
+                                        </td>
+                                        <td class="product-name">
+                                            <div class="product-name-section">
+                                                <a href="product-simple.html">Women Beautiful Headgear</a>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <span class="amount">$98.00</span>
+                                        </td>
+                                        <td class="product-quantity">
+                                            <div class="input-group">
+                                                <button class="quantity-minus d-icon-minus"></button>
+                                                <input class="quantity form-control" type="number" min="1"
+                                                    max="1000000">
+                                                <button class="quantity-plus d-icon-plus"></button>
+                                            </div>
+                                        </td>
+                                        <td class="product-price">
+                                            <span class="amount">$98.00</span>
+                                        </td>
+                                        <td class="product-close">
+                                            <a href="#" class="product-remove" title="Remove this product">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="cart-actions mb-6 pt-4">
+                                <a href="shop.html" class="btn btn-dark btn-md btn-rounded btn-icon-left mr-4 mb-4"><i
+                                        class="d-icon-arrow-left"></i>Continue Shopping</a>
+                                <button type="submit"
+                                    class="btn btn-outline btn-dark btn-md btn-rounded btn-disabled">Update
+                                    Cart</button>
                             </div>
-                            <div class="col-lg-8 ">
-                                <div class="row">
-                                    <div class="col-md-4 mb-4">
-                                        <div class="counter text-center text-dark">
-                                            <span class="count-to" data-fromvalue="0" data-tovalue="34"
-                                                data-duration="900" data-delimiter=",">0</span>
-                                            <h5 class="count-title font-weight-bold text-body ls-md">Business Year</h5>
-                                            <p class="text-grey mb-0">Lorem ipsum dolor sit<br>amet, conctetur adipisci
-                                                elit. viverra erat orci.</p>
+                            <div class="cart-coupon-box mb-8">
+                                <h4 class="title coupon-title text-uppercase ls-m">Coupon Discount</h4>
+                                <input type="text" name="coupon_code"
+                                    class="input-text form-control text-grey ls-m mb-4" id="coupon_code" value=""
+                                    placeholder="Enter coupon code here...">
+                                <button type="submit" class="btn btn-md btn-dark btn-rounded btn-outline">Apply
+                                    Coupon</button>
+                            </div>
+                        </div>
+                        <aside class="col-lg-4 sticky-sidebar-wrapper">
+                            <div class="sticky-sidebar" data-sticky-options="{'bottom': 20}">
+                                <div class="summary mb-4">
+                                    <h3 class="summary-title text-left">Cart Totals</h3>
+                                    <table class="shipping">
+                                        <tr class="summary-subtotal">
+                                            <td>
+                                                <h4 class="summary-subtitle">Subtotal</h4>
+                                            </td>
+                                            <td>
+                                                <p class="summary-subtotal-price">$426.99</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="sumnary-shipping shipping-row-last">
+                                            <td colspan="2">
+                                                <h4 class="summary-subtitle">Calculate Shipping</h4>
+                                                <ul>
+                                                    <li>
+                                                        <div class="custom-radio">
+                                                            <input type="radio" id="flat_rate" name="shipping"
+                                                                class="custom-control-input" checked>
+                                                            <label class="custom-control-label" for="flat_rate">Flat
+                                                                rate</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-radio">
+                                                            <input type="radio" id="free-shipping" name="shipping"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label" for="free-shipping">Free
+                                                                shipping</label>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="custom-radio">
+                                                            <input type="radio" id="local_pickup" name="shipping"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label" for="local_pickup">Local
+                                                                pickup</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="shipping-address">
+                                        <label>Shipping to <strong>CA.</strong></label>
+                                        <div class="select-box">
+                                            <select name="country" class="form-control">
+                                                <option value="us" selected>United States (US)</option>
+                                                <option value="uk"> United Kingdom</option>
+                                                <option value="fr">France</option>
+                                                <option value="aus">Austria</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4 mb-4">
-                                        <div class="counter text-center text-dark">
-                                            <span class="count-to" data-fromvalue="0" data-tovalue="50"
-                                                data-duration="900" data-delimiter=",">0</span>
-                                            <h5 class="count-title font-weight-bold text-body ls-md">Design Brands</h5>
-                                            <p class="text-grey mb-0">Lorem ipsum dolor sit<br>amet, conctetur adipisci
-                                                elit. viverra erat orci.</p>
+                                        <div class="select-box">
+                                            <select name="country" class="form-control">
+                                                <option value="us" selected>California</option>
+                                                <option value="uk">Alaska</option>
+                                                <option value="fr">Delaware</option>
+                                                <option value="aus">Hawaii</option>
+                                            </select>
                                         </div>
+                                        <input type="text" class="form-control" name="code" placeholder="Town / City" />
+                                        <input type="text" class="form-control" name="code" placeholder="ZIP" />
+                                        <a href="#" class="btn btn-md btn-dark btn-rounded btn-outline">Update
+                                            totals</a>
                                     </div>
-                                    <div class="col-md-4 mb-4">
-                                        <div class="counter text-center text-dark">
-                                            <span class="count-to" data-fromvalue="0" data-tovalue="130"
-                                                data-duration="900" data-delimiter=",">0</span>
-                                            <h5 class="count-title font-weight-bold text-body ls-md">Team Members</h5>
-                                            <p class="text-grey mb-0">Lorem ipsum dolor sit<br>amet, conctetur adipisci
-                                                elit. viverra erat orci.</p>
-                                        </div>
-                                    </div>
+                                    <table class="total">
+                                        <tr class="summary-subtotal">
+                                            <td>
+                                                <h4 class="summary-subtitle">Total</h4>
+                                            </td>
+                                            <td>
+                                                <p class="summary-total-price ls-s">$426.99</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <a href="checkout.html" class="btn btn-dark btn-rounded btn-checkout">Proceed to
+                                        checkout</a>
                                 </div>
                             </div>
-                        </div>
+                        </aside>
                     </div>
-                </section>
-                <!-- End About Section-->
-
-                <section class="customer-section pb-10 appear-animate">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-7 mb-4">
-                                <figure>
-                                    <img src="./images/dogygear/D (149)-PhotoRoom.png-PhotoRoom.png" alt="Happy Customer" width="580"
-                                        height="507" class="banner-radius" style="background-color: #BDD0DE;" />
-                                </figure>
-                            </div>
-                            <div class="col-md-5 mb-4">
-                                <h5 class="section-subtitle lh-2 ls-md font-weight-normal">02. Happy Customer</h5>
-                                <h3 class="section-title lh-1 font-weight-bold">Provide fashionable and<br>qualifed
-                                    products</h3>
-                                <p class="section-desc text-grey">
-                                    Already millions of people are very satisfied by thi.<br>
-                                    s page builder and the number is growing more and more. Technolog<br>
-                                    developing, requirements are increasing. Riode has brought.
-                                </p>
-                                <a href="#" class="btn btn-dark btn-link btn-underline ls-m">Visit Our Store<i
-                                        class="d-icon-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End Customer Section -->
-
-                <section class="store-section pb-10 appear-animate">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 order-md-first mb-4">
-                                <h5 class="section-subtitle lh-2 ls-md font-weight-normal mb-1">03. Our Store</h5>
-                                <h3 class="section-title lh-1 font-weight-bold">Expect Restless<br>Amazing Support</h3>
-                                <p class="section-desc text-grey">
-                                    Already millions of people are very satisfied by thi.<br>
-                                    s page builder and the number is growing more and more. Technolog<br>
-                                    developing, requirements are increasing. Riode has brought.
-                                </p>
-                                <a href="#" class="btn btn-dark btn-link btn-underline ls-m">Get Our Store<i
-                                        class="d-icon-arrow-right"></i></a>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <figure>
-                                    <img src="images/subpages/store.jpg" alt="Our Store" width="580" height="507"
-                                        class="banner-radius" style="background-color: #DEE6E8;" />
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- End Store-section -->
-
-                <!-- <section class="brand-section grey-section pt-10 pb-10 appear-animate">
-                    <div class="container mt-8 mb-10">
-                        <h5 class="section-subtitle lh-2 ls-md font-weight-normal mb-1 text-center">04. Our Clients</h5>
-                        <h3 class="section-title lh-1 font-weight-bold text-center mb-5">Popular Brands</h3>
-                        <div class="owl-carousel owl-theme row cols-xl-6 cols-lg-5 cols-md-4 cols-sm-3 cols-2"
-                            data-owl-options="{
-                            'nav': false,
-                            'dots': false,
-                            'autoplay': true,
-                            'margin': 20,
-                            'responsive': {
-                                '0': {
-                                    'items': 2
-                                },
-                                '576': {
-                                    'items': 3
-                                },
-                                '768': {
-                                    'items': 4
-                                },
-                                '992': {
-                                    'items': 5
-                                },
-                                '1200': {
-                                    'items': 6
-                                }
-                            }
-                        }">
-                            <figure class="brand-wrap bg-white banner-radius">
-                                <img src="images/brands/1.png" alt="Brand" width="180" height="100" />
-                            </figure>
-                            <figure class="brand-wrap bg-white banner-radius">
-                                <img src="images/brands/2.png" alt="Brand" width="180" height="100" />
-                            </figure>
-                            <figure class="brand-wrap bg-white banner-radius">
-                                <img src="images/brands/3.png" alt="Brand" width="180" height="100" />
-                            </figure>
-                            <figure class="brand-wrap bg-white banner-radius">
-                                <img src="images/brands/4.png" alt="Brand" width="180" height="100" />
-                            </figure>
-                            <figure class="brand-wrap bg-white banner-radius">
-                                <img src="images/brands/5.png" alt="Brand" width="180" height="100" />
-                            </figure>
-                            <figure class="brand-wrap bg-white banner-radius">
-                                <img src="images/brands/6.png" alt="Brand" width="180" height="100" />
-                            </figure>
-                        </div>
-                    </div>
-                </section> -->
-
-                <!-- <section class="team-section pt-8 mt-10 pb-10 mb-6 appear-animate">
-                    <div class="container">
-                        <h5 class="section-subtitle lh-2 ls-md font-weight-normal mb-1 text-center">04. Our Leaders</h5>
-                        <h3 class="section-title lh-1 font-weight-bold text-center mb-5">Meet our team</h3>
-                        <div class="row cols-sm-2 cols-md-4">
-                            <div class="member appear-animate" data-animation-options="{'name': 'fadeInLeftShorter'}">
-                                <figure class="banner-radius">
-                                    <img src="images/subpages/team1.jpg" alt="team member" width="280" height="280"
-                                        style="background-color: #EEE;">
-                                    <div class="overlay social-links">
-                                        <a href="#" class="social-link social-facebook fab fa-facebook-f"></a>
-                                        <a href="#" class="social-link social-twitter fab fa-twitter"></a>
-                                        <a href="#" class="social-link social-linkedin fab fa-linkedin-in"></a>
-                                    </div>
-                                </figure>
-                                <h4 class="member-name">Tomasz Treflerzan</h4>
-                                <h5 class="member-job">Ceo / Founder</h5>
-                            </div>
-                            <div class="member appear-animate"
-                                data-animation-options="{'name': 'fadeInLeftShorter', 'delay': '.3s'}">
-                                <figure class="banner-radius">
-                                    <img src="images/subpages/team2.jpg" alt="team member" width="280" height="280"
-                                        style="background-color: #121A1F;">
-                                    <div class="overlay social-links">
-                                        <a href="#" class="social-link social-facebook fab fa-facebook-f"></a>
-                                        <a href="#" class="social-link social-twitter fab fa-twitter"></a>
-                                        <a href="#" class="social-link social-linkedin fab fa-linkedin-in"></a>
-                                    </div>
-                                </figure>
-                                <h4 class="member-name">Dylan Chavez</h4>
-                                <h5 class="member-job">Support manager / founder</h5>
-                            </div>
-                            <div class="member appear-animate"
-                                data-animation-options="{'name': 'fadeInLeftShorter', 'delay': '.4s'}">
-                                <figure class="banner-radius">
-                                    <img src="images/subpages/team3.jpg" alt="team member" width="280" height="280"
-                                        style="background-color: #E8E7E3;">
-                                    <div class="overlay social-links">
-                                        <a href="#" class="social-link social-facebook fab fa-facebook-f"></a>
-                                        <a href="#" class="social-link social-twitter fab fa-twitter"></a>
-                                        <a href="#" class="social-link social-linkedin fab fa-linkedin-in"></a>
-                                    </div>
-                                </figure>
-                                <h4 class="member-name">Viktoriia Demianenko</h4>
-                                <h5 class="member-job">Designer</h5>
-                            </div>
-                            <div class="member appear-animate"
-                                data-animation-options="{'name': 'fadeInLeftShorter', 'delay': '.5s'}">
-                                <figure class="banner-radius">
-                                    <img src="images/subpages/team4.jpg" alt="team member" width="280" height="280"
-                                        style="background-color: #465D7F;">
-                                    <div class="overlay social-links">
-                                        <a href="#" class="social-link social-facebook fab fa-facebook-f"></a>
-                                        <a href="#" class="social-link social-twitter fab fa-twitter"></a>
-                                        <a href="#" class="social-link social-linkedin fab fa-linkedin-in"></a>
-                                    </div>
-                                </figure>
-                                <h4 class="member-name">Mikhail Hnatuk</h4>
-                                <h5 class="member-job">Support</h5>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-                <!-- End Team Section -->
+                </div>
             </div>
+
         </main>
         <!-- End Main -->
         <footer class="footer pt-10 pt-md-0">
@@ -415,7 +383,7 @@
     </div>
     <!-- Sticky Footer -->
     <div class="sticky-footer sticky-content fix-bottom">
-        <a href="index.html" class="sticky-link">
+        <a href="demo1.html" class="sticky-link">
             <i class="d-icon-home"></i>
             <span>Home</span>
         </a>
@@ -466,7 +434,7 @@
             <!-- End Search Form -->
             <ul class="mobile-menu mmenu-anim">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="demo1.html">Home</a>
                 </li>
                 <li>
                     <a href="shop.html" class="active">Categories</a>
@@ -743,7 +711,7 @@
 	<div class="sticky-icons-wrapper">
 		<div class="sticky-icon-links">
 			<ul>
-				<li><a href="/" class="demo-toggle"><i class="fas fa-home"></i><span>Home</span></a></li>
+				<li><a href="index.html" class="demo-toggle"><i class="fas fa-home"></i><span>Home</span></a></li>
 				<li><a href="about-us.html"><i class="fas fa-info-circle"></i><span>About Us</span></a></li>
 				<li><a href="tel:555-123-4567"><i class="fas fa-phone"></i><span>Contact</span></a></li>
 				<li><a href="dogy-gear-shop.html"><i class="fas fa-shopping-cart"></i><span>Buy now!</span></a></li>
@@ -761,9 +729,9 @@
 	</div>
 	<!-- Plugins JS File -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery.count-to/jquery-numerator.min.js"></script>
+    <script src="vendor/elevatezoom/jquery.elevatezoom.min.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
     <!-- Main JS File -->
     <script src="js/main.min.js"></script>
 </body>
