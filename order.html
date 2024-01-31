@@ -140,7 +140,7 @@
 					<div class="order-results">
 						<div class="overview-item">
 							<span>Order number:</span>
-							<strong>4935</strong>
+							<strong id="Ordernumber">4935</strong>
 						</div>
 						<div class="overview-item">
 							<span>Status:</span>
@@ -165,7 +165,7 @@
 							  
 								// Optionally, you can update the date and time at regular intervals
 								setInterval(updateDateTime, 1000); // Update every second
-							  </script>
+							</script>
 						</div>
 						<div class="overview-item">
 							<span>Email:</span>
@@ -173,7 +173,7 @@
 						</div>
 						<div class="overview-item">
 							<span>Total:</span>
-							<strong>$80.00</strong>
+							<strong id="totalCost">$80.00</strong>
 						</div>
 						<div class="overview-item">
 							<span>Payment method:</span>
@@ -692,6 +692,72 @@
 	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<!-- Main JS File -->
 	<script src="js/main.min.js"></script>
+
+	<script>
+		window.onload = function() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+			let totalPrice = 0;
+			let totalPriceF = 2;
+
+            cart.forEach(item => {
+                totalPrice += item.price * (item.quantity || 1);
+            });
+
+			totalPriceF += totalPrice;
+
+			document.getElementById("totalCost").innerHTML = `$${totalPriceF.toFixed(2)}`;
+			document.getElementById("Ordernumber").innerHTML = `${generateOrderId()}`;
+			
+            let tableBody = document.querySelector('.order-details-table tbody');
+            tableBody.innerHTML = ''; // Clear existing content
+            cart.forEach(item => {
+                let row = ` <tr>
+								<td class="product-name">${item.productName}<span> <i class="fas fa-times"></i>${item.quantity}</span></td>
+								<td class="product-price">$${(item.price * item.quantity).toFixed(2)}</td>
+							</tr>`;
+                tableBody.innerHTML += row;
+            });
+			tableBody.innerHTML += `
+								<tr class="summary-subtotal">
+									<td>
+										<h4 class="summary-subtitle">Subtotal:</h4>
+									</td>
+									<td class="summary-subtotal-price">$${totalPrice.toFixed(2)}</td>
+								</tr>
+								<tr class="summary-subtotal">
+									<td>
+										<h4 class="summary-subtitle">Shipping:</h4>
+									</td>
+									<td class="summary-subtotal-price">Flat $2.00</td>
+								</tr>
+								<tr class="summary-subtotal">
+									<td>
+										<h4 class="summary-subtitle">Payment method:</h4>
+									</td>
+									<td class="summary-subtotal-price">Cash on delivery</td>
+								</tr>
+								<tr class="summary-subtotal">
+									<td>
+										<h4 class="summary-subtitle">Total:</h4>
+									</td>
+									<td>
+										<p class="summary-total-price">$${totalPriceF.toFixed(2)}</p>
+									</td>
+								</tr>`;
+			
+								clearCart();
+        }
+
+		// Ordernumber
+		function generateOrderId() {
+			return Math.floor(1000 + Math.random() * 9000);
+		}
+
+		function clearCart() {
+			localStorage.setItem('cart', JSON.stringify([]));
+			// Optionally, you can also add code here to update the UI to reflect the empty cart
+		}
+	</script>
 </body>
 
 </html>
