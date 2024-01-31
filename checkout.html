@@ -165,8 +165,7 @@
 								<input type="text" name="coupon_code"
 									class="input-text form-control text-grey ls-m mr-4 mb-4" id="coupon_code" value=""
 									placeholder="Coupon code">
-								<button type="submit" class="btn btn-dark btn-rounded btn-outline mb-4">Apply
-									Coupon</button>
+								<button type="submit" class="btn btn-dark btn-rounded btn-outline mb-4">Apply Coupon</button>
 							</div>
 						</div>
 					</div>
@@ -417,12 +416,9 @@
                                     <img src="images/demos/demo4/payment.png" alt="payment" width="135" height="24" />
                                 </figure>
                                 <div class="social-links">
-                                    <a href="#" title="social-link"
-                                        class="social-link social-facebook fab fa-facebook-f"></a>
-                                    <a href="#" title="social-link"
-                                        class="social-link social-twitter fab fa-twitter"></a>
-                                    <a href="#" title="social-link"
-                                        class="social-link social-linkedin fab fa-linkedin-in"></a>
+                                    <a href="#" title="social-link" class="social-link social-facebook fab fa-facebook-f"></a>
+                                    <a href="#" title="social-link" class="social-link social-twitter fab fa-twitter"></a>
+                                    <a href="#" title="social-link" class="social-link social-linkedin fab fa-linkedin-in"></a>
                                 </div>
                             </div>
                         </div>
@@ -792,6 +788,58 @@
 	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<!-- Main JS File -->
 	<script src="js/main.min.js"></script>
+	<script>
+		window.onload = function() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+			let totalPrice = 0;
+			let totalPriceF = 2;
+
+            cart.forEach(item => {
+                totalPrice += item.price * (item.quantity || 1);
+            });
+
+			totalPriceF += totalPrice;
+
+            let tableBody = document.querySelector('.order-table tbody');
+            tableBody.innerHTML = ''; // Clear existing content
+            cart.forEach(item => {
+                let row = ` <tr>
+								<td class="product-name">${item.productName}<span
+										class="product-quantity">×&nbsp;${item.quantity}</span></td>
+								<td class="product-total text-body">$${(item.price * item.quantity).toFixed(2)}</td>
+							</tr>`;
+                tableBody.innerHTML += row;
+            });
+			tableBody.innerHTML += `
+							<tr class="summary-subtotal">
+								<td>
+									<h4 class="summary-subtitle">Subtotal</h4>
+								</td>
+								<td class="summary-subtotal-price pb-0 pt-0">$${totalPrice.toFixed(2)}</td>
+							</tr>
+							<tr class="sumnary-shipping shipping-row-last">
+								<td colspan="2">
+									<h4 class="summary-subtitle">Calculate Shipping</h4>
+									<ul>
+										<li>
+											<div class="custom-radio">
+												<input type="radio" id="flat_rate" name="shipping" class="custom-control-input" checked>
+												<label class="custom-control-label" for="flat_rate">Flat rate</label>
+											</div>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr class="summary-total">
+								<td class="pb-0">
+									<h4 class="summary-subtitle">Total</h4>
+								</td>
+								<td class=" pt-0 pb-0">
+									<p class="summary-total-price ls-s text-primary">$${totalPriceF.toFixed(2)}</p>
+								</td>
+							</tr>`;
+        }
+	</script>
 </body>
 
 </html>
