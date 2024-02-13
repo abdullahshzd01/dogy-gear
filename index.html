@@ -203,7 +203,7 @@
                             </a>
                             <div class="dropdown-box">
                                 <div class="products scrollable">
-                                    <div class="product product-cart">
+                                    <!-- <div class="product product-cart">
                                         <figure class="product-media">
                                             <a href="dogy-gear-product.html">
                                                 <img src="./images/dogygear/Jacket.png" alt="product"width="80" height="88" />
@@ -219,9 +219,9 @@
                                                 <span class="product-price">$39.00</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- End of Cart Product -->
-                                    <div class="product product-cart">
+                                    <!-- <div class="product product-cart">
                                         <figure class="product-media">
                                             <a href="dogy-gear-product.html">
                                                 <img src="./images/dogygear/colars.png" alt="product" width="80" height="88" />
@@ -237,7 +237,7 @@
                                                 <span class="product-price">$39.00</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- End of Cart Product -->
                                 </div>
                                 <!-- End of Products  -->
@@ -253,6 +253,69 @@
                                 <!-- End of Cart Action -->
                             </div>
                         </div>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {;
+                                updateCartUI();
+                            });
+
+                            // window.onload = function() {
+                            //     document.querySelector('.dropdown-box .products').innerHTML = '';
+                            //     updateCartUI();
+                            // }
+                        
+                            function updateCartUI() {
+                                let HeaderCart = document.querySelector('.dropdown-box .products');
+                                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                                // let cartHTML = '';
+                                let total = 0;
+                                let cartCount = 0;
+
+                                HeaderCart.innerHTML = '';
+                        
+                                for (let item of cart) {
+                                    let cartHTML = `
+                                        <div class="product product-cart">
+                                            <figure class="product-media">
+                                                <a href="dogy-gear-product.html">
+                                                    <img src="${item.imgURL}" alt="${item.productName}" width="80" height="88" />
+                                                </a>
+                                                <button class="btn btn-link btn-close" onclick="removeFromCart(${item.id})">
+                                                    <i class="fas fa-times"></i><span class="sr-only">Close</span>
+                                                </button>
+                                            </figure>
+                                            <div class="product-detail">
+                                                <a href="dogy-gear-product.html" class="product-name">${item.productName}</a>
+                                                <div class="price-box">
+                                                    <span class="product-quantity">${item.quantity}</span>
+                                                    <span class="product-price">$${item.price}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+                                    total += item.price * item.quantity;
+                                    cartCount += item.quantity;
+
+                                    HeaderCart.innerHTML += cartHTML;
+                                }
+
+                                document.querySelector('.cart-count').innerText = cartCount;
+                                // document.querySelector('.dropdown-box .products').innerHTML = cartHTML;
+                                document.querySelector('.cart-total .price').innerText = `$${total.toFixed(2)}`;
+                            }
+
+                            function removeFromCart(id) {
+                                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                                let index = cart.findIndex(item => item.id === id);
+                                if (index !== -1) {
+                                    cart.splice(index, 1); // Remove the item from the cart
+                                    localStorage.setItem('cart', JSON.stringify(cart)); // Update the cart in local storage
+                                    // updateCartUI(); // Refresh the cart UI
+                                }
+
+                                location.reload();
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
@@ -717,6 +780,8 @@
                                 localStorage.setItem('cart', JSON.stringify(cart));
 
                                 // console.log("Cart: ", cart);
+
+                                location.reload();
                             }
                         </script>
                     </div>
