@@ -38,6 +38,7 @@
 
     <!-- Main CSS File -->
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/demo-food3.min.css">
 
     <style>
         .logo-img-header {
@@ -68,13 +69,13 @@
                         </a>
                     </div> -->
                     <div class="header-right">
-                        <a href="tel:#" class="icon-box icon-box-side">
+                        <a href="tel:+1 (347) 258-2202" class="icon-box icon-box-side">
                             <div class="icon-box-icon mr-0 mr-lg-2">
                                 <i class="d-icon-phone"></i>
                             </div>
                             <div class="icon-box-content d-lg-show">
                                 <h4 class="icon-box-title">Call Us Now:</h4>
-                                <p>0(800) 123-456</p>
+                                <p>+1 (347) 258-2202</p>
                             </div>
                         </a>
                     </div>
@@ -122,44 +123,55 @@
             <div class="page-content mt-10 pt-10">
                 <section class="about-section pb-10 appear-animate">
                     <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-4 mb-10 mb-lg-4">
-                                <h5 class="section-subtitle lh-2 ls-md font-weight-normal">01. What We Do</h5>
-                                <h3 class="section-title lh-1 font-weight-bold">Provide perfect and practical services
-                                </h3>
-                                <p class="section-desc">Lorem quis bibendum auctar, nisi elit consequat ipsum, nec
-                                    sagittis sem nibh id elit.</p>
-                            </div>
-                            <div class="col-lg-8 ">
+                        <div class="align-items-center">
+                            <div class="container col-lg-12 mb-10 mb-lg-4">
+                                <div class="row">
+                                    <div class="text-center">
+                                        <h1>Overview</h1>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-4 mb-4">
                                         <div class="counter text-center text-dark">
-                                            <span class="count-to" data-fromvalue="0" data-tovalue="34"
+                                            <span class="count-to" id="businessYears" data-fromvalue="0" data-tovalue="2"
                                                 data-duration="900" data-delimiter=",">0</span>
                                             <h5 class="count-title font-weight-bold text-body ls-md">Business Year</h5>
-                                            <p class="text-grey mb-0">Lorem ipsum dolor sit<br>amet, conctetur adipisci
-                                                elit. viverra erat orci.</p>
                                         </div>
+
+                                        <script>
+                                            // Calculating the current number of years since 2021
+                                            const startYear = 2021;
+                                            const currentYear = new Date().getFullYear();
+                                            const businessYears = currentYear - startYear;
+
+                                            // Select the span element and update the data-tovalue attribute
+                                            const counter = document.getElementById('businessYears');
+                                            counter.setAttribute('data-tovalue', businessYears);
+                                        </script>
                                     </div>
                                     <div class="col-md-4 mb-4">
                                         <div class="counter text-center text-dark">
                                             <span class="count-to" data-fromvalue="0" data-tovalue="50"
                                                 data-duration="900" data-delimiter=",">0</span>
-                                            <h5 class="count-title font-weight-bold text-body ls-md">Design Brands</h5>
-                                            <p class="text-grey mb-0">Lorem ipsum dolor sit<br>amet, conctetur adipisci
-                                                elit. viverra erat orci.</p>
+                                            <h5 class="count-title font-weight-bold text-body ls-md">Products</h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-4">
                                         <div class="counter text-center text-dark">
-                                            <span class="count-to" data-fromvalue="0" data-tovalue="130"
+                                            <span class="count-to" data-fromvalue="0" data-tovalue="30"
                                                 data-duration="900" data-delimiter=",">0</span>
                                             <h5 class="count-title font-weight-bold text-body ls-md">Team Members</h5>
-                                            <p class="text-grey mb-0">Lorem ipsum dolor sit<br>amet, conctetur adipisci
-                                                elit. viverra erat orci.</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="container col-lg-12 mb-10 mb-lg-4">
+                                <!-- <h5 class="section-subtitle lh-2 ls-md font-weight-normal">01. What We Do</h5> -->
+                                <h3 class="section-title lh-1 font-weight-bold">Our Pack</h3>
+                                <p class="text-grey">Welcome to Dogygear, your trusted partner in crafting high-quality dog accessories! Established in 2021, we are dedicated to enhancing the lives of dogs and their humans through innovative and thoughtfully designed products. Our passion for pets drives everything we do, as we believe that every dog deserves comfort, safety, and style. At Dogygear, we take pride in our commitment to quality craftsmanship. Each accessory is meticulously manufactured using durable materials that can withstand the adventures that come with being a beloved pet. From collars and leashes to bags and apparel, our products are created with both functionality and aesthetics in mind, ensuring that your furry friends not only look great but are also equipped for any adventure.</p>
+                                <p>Our mission goes beyond just selling accessories; we are here to foster a deeper connection between dogs and their owners. We understand that dogs are more than just pets; they are family members who share in our journeys and enrich our lives. That’s why we infuse every product with the spirit of exploration and fun, encouraging outdoor activities and bonding experiences. As a company that values sustainability and social responsibility, we strive to minimize our environmental impact through responsible sourcing and manufacturing practices. We believe in transparency and integrity, and we’re proud to create products that contribute positively to both our community and the environment.</p>
+                                <p>Join us on this journey as we celebrate the incredible bond between dogs and their humans. Explore our collection of premium dog accessories and experience the difference quality and care can make. Together, let’s embark on countless adventures, creating memories that will last a lifetime!</p>
+                                <p><strong>Welcome to the Dogygear family—where dogs are not just pets; they are our passion.</strong></p>                                
                             </div>
                         </div>
                     </div>
@@ -176,16 +188,10 @@
                                 </figure>
                             </div>
                             <div class="col-md-5 mb-4">
-                                <h5 class="section-subtitle lh-2 ls-md font-weight-normal">02. Happy Customer</h5>
-                                <h3 class="section-title lh-1 font-weight-bold">Provide fashionable and<br>qualifed
-                                    products</h3>
-                                <p class="section-desc text-grey">
-                                    Already millions of people are very satisfied by thi.<br>
-                                    s page builder and the number is growing more and more. Technolog<br>
-                                    developing, requirements are increasing. Riode has brought.
-                                </p>
-                                <a href="#" class="btn btn-dark btn-link btn-underline ls-m">Visit Our Store<i
-                                        class="d-icon-arrow-right"></i></a>
+                                <!-- <h5 class="section-subtitle lh-2 ls-md font-weight-normal">02. Happy Customer</h5> -->
+                                <h3 class="section-title lh-1 font-weight-bold">Our Practices</h3>
+                                <p class="section-desc">At Dogygear we prioritize quality, sustainability, and ethical responsibility in everything we do. Our products are crafted with high-quality, durable materials to ensure the comfort and safety of your pets. We are committed to eco-friendly practices, using sustainable materials and ethical manufacturing processes. A portion of our profits supports animal welfare organizations, helping dogs in need find loving homes. Your satisfaction drives us, and we continuously strive to meet your needs through exceptional customer service. <strong>Join us in making a positive impact for our pets and our planet!</strong></p>
+                                <a href="./dogy-gear-shop.html" class="btn btn-dark btn-link btn-underline ls-m">Visit Our Store<i class="d-icon-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -196,19 +202,17 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-md-6 order-md-first mb-4">
-                                <h5 class="section-subtitle lh-2 ls-md font-weight-normal mb-1">03. Our Store</h5>
-                                <h3 class="section-title lh-1 font-weight-bold">Expect Restless<br>Amazing Support</h3>
-                                <p class="section-desc text-grey">
-                                    Already millions of people are very satisfied by thi.<br>
-                                    s page builder and the number is growing more and more. Technolog<br>
-                                    developing, requirements are increasing. Riode has brought.
-                                </p>
-                                <a href="#" class="btn btn-dark btn-link btn-underline ls-m">Get Our Store<i
-                                        class="d-icon-arrow-right"></i></a>
+                                <!-- <h5 class="section-subtitle lh-2 ls-md font-weight-normal mb-1">03. Our Store</h5> -->
+                                <h3 class="section-title lh-1 font-weight-bold">Design Philosophy</h3>
+                                <p class="section-desc">At Dogygear our design philosophy centers around the unique bond between dogs and their humans. Founded in 2021, we create high-quality dog accessories that blend functionality with style. We believe that every product should serve a purpose while looking great. Our focus on functionality ensures that our accessories are easy to use and reliable, making every adventure enjoyable. We use innovative, sustainable materials that provide comfort and durability, prioritizing safety in every design.</p>
+                                <p class="section-desc">Our mission is to inspire connection and exploration. We want every product to encourage shared experiences between you and your dog, whether at home or outdoors. Plus, we are committed to eco-friendly practices, working towards a more sustainable future for our planet.</p>
+                                <p class="section-desc text-grey"><strong>Join us as we celebrate the joy of being together with your furry friends, one thoughtfully designed accessory at a time!</strong></p>
+                                <p class="section-desc text-grey"></p>
+                                <a href="./dogy-gear-shop.html" class="btn btn-dark btn-link btn-underline ls-m">Get Our Store<i class="d-icon-arrow-right"></i></a>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <figure>
-                                    <img src="images/subpages/store.jpg" alt="Our Store" width="580" height="507"
+                                    <img src="images/dogygear/D (136)-PhotoRoom.png-PhotoRoom.png" alt="Our Store" width="580" height="507"
                                         class="banner-radius" style="background-color: #DEE6E8;" />
                                 </figure>
                             </div>
@@ -344,8 +348,7 @@
                                     <img src="./images/dogygear/LOGO-1.png" alt="logo-footer" width="80" height="43" />
                                 </a>
                                 <div class="widget-body">
-                                    <p class="ls-s">Fringilla urna porttitor rhoncus dolor purus<br />
-                                        maecenas ultricies mi eget mauris.</p>
+                                    <p class="ls-s">DogyGear - Your trusted partner in crafting high-quality dog accessories!</p>
                                     <a href="mailto:contact@dogygear.com">contact@dogygear.com</a>
                                 </div>
                             </div>
@@ -355,13 +358,18 @@
                             <div class="widget">
                                 <h4 class="widget-title">Call Us</h4>
                                 <ul class="widget-body">
-                                    <li><a href="#">(650) 123-4567</a></li>
-                                    <li><a href="#">(650) 123-7890</a></li>
+                                    <li><a href="tel:+1 (347) 258-2202">+1 (347) 258-2202</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget">
+                                <h4 class="widget-title">Email Us</h4>
+                                <ul class="widget-body">
+                                    <li><a href="mailto:doggygearllc@gmail.com">doggygearllc@gmail.com</a></li>
                                 </ul>
                             </div>
                             <!-- End of Widget -->
                         </div>
-                        <div class="col-xl-2 col-lg-4 col-sm-6 mb-6 mb-xl-0">
+                        <!-- <div class="col-xl-2 col-lg-4 col-sm-6 mb-6 mb-xl-0">
                             <div class="widget">
                                 <h4 class="widget-title">Hours</h4>
                                 <ul class="widget-body">
@@ -369,15 +377,23 @@
                                     <li><a href="#">S-SU: 8AM -6PM</a></li>
                                 </ul>
                             </div>
-                            <!-- End of Widget -->
-                        </div>
-                        <div class="col-xl-2 col-lg-4 col-sm-6 mb-6 mb-xl-0">
+                        </div> -->
+                        <div class="col-xl-4 col-lg-6 col-sm-8 mb-8 mb-xl-2">
                             <div class="widget">
                                 <h4 class="widget-title">Location</h4>
                                 <ul class="widget-body">
-                                    <li><a href="#">242 S llth st.</a></li>
-                                    <li><a href="#">Philly, Nyc 19107</a></li>
+                                    <li><a href="#">Saint Petersburg, FL, United States, Florida</a></li>
+                                    <!-- <li><a href="#">Philly, Nyc 19107</a></li> -->
                                 </ul>
+                            </div>
+                            <div class="widget">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108685.48223622575!2d-82.73496092020042!3d27.786298720118843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e663693aaa41%3A0x4cc4003bcd48bff!2sSt.%20Petersburg%2C%20FL%2C%20USA!5e0!3m2!1sen!2s!4v1726595160313!5m2!1sen!2s"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
                             <!-- End of Widget -->
                         </div>
@@ -424,27 +440,27 @@
             <i class="d-icon-home"></i>
             <span>Home</span>
         </a>
-        <a href="shop.html" class="sticky-link">
-            <i class="d-icon-volume"></i>
-            <span>Categories</span>
+        <a href="dogy-gear-shop.html" class="sticky-link">
+            <i class="d-icon-bag"></i>
+            <span>Shop</span>
         </a>
-        <a href="wishlist.html" class="sticky-link">
+        <a href="javascript:void(0)" class="sticky-link">
             <i class="d-icon-heart"></i>
             <span>Wishlist</span>
         </a>
-        <a href="account.html" class="sticky-link">
+        <a href="javascript:void(0)" class="sticky-link">
             <i class="d-icon-user"></i>
             <span>Account</span>
         </a>
         <div class="header-search hs-toggle dir-up">
-            <a href="#" class="search-toggle sticky-link">
+            <a href="javascript:void(0)" class="search-toggle sticky-link">
                 <i class="d-icon-search"></i>
                 <span>Search</span>
             </a>
             <form action="#" class="input-wrapper">
                 <input type="text" class="form-control" name="search" autocomplete="off"
                     placeholder="Search your keyword..." required />
-                <button class="btn btn-search" type="submit">
+                <button class="btn btn-search" type="submit" title="submit-button">
                     <i class="d-icon-search"></i>
                 </button>
             </form>
@@ -464,7 +480,7 @@
             <form action="#" class="input-wrapper">
                 <input type="text" class="form-control" name="search" autocomplete="off"
                     placeholder="Search your keyword..." required />
-                <button class="btn btn-search" type="submit">
+                <button class="btn btn-search" type="submit" title="submit-button">
                     <i class="d-icon-search"></i>
                 </button>
             </form>
@@ -474,272 +490,15 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="shop.html" class="active">Categories</a>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Variations 1
-                            </a>
-                            <ul>
-                                <li><a href="shop-classic-filter.html">Classic Filter</a></li>
-                                <li><a href="shop-left-toggle-sidebar.html">Left Toggle Filter</a></li>
-                                <li><a href="shop-right-toggle-sidebar.html">Right Toggle Sidebar</a></li>
-                                <li><a href="shop-horizontal-filter.html">Horizontal Filter </a>
-                                </li>
-                                <li><a href="shop-navigation-filter.html">Navigation Filter</a></li>
-
-                                <li><a href="shop-off-canvas-filter.html">Off-Canvas Filter </a></li>
-                                <li><a href="shop-top-banner.html">Top Banner</a></li>
-                                <li><a href="shop-inner-top-banner.html">Inner Top Banner</a></li>
-                                <li><a href="shop-with-bottom-block.html">With Bottom Block</a></li>
-                                <li><a href="shop-category-in-page-header.html">Category In Page Header</a>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Variations 2
-                            </a>
-                            <ul>
-                                <li><a href="shop-grid-3cols.html">3 Columns Mode</a></li>
-                                <li><a href="shop-grid-4cols.html">4 Columns Mode</a></li>
-                                <li><a href="shop-grid-5cols.html">5 Columns Mode</a></li>
-                                <li><a href="shop-grid-6cols.html">6 Columns Mode</a></li>
-                                <li><a href="shop-grid-7cols.html">7 Columns Mode</a></li>
-                                <li><a href="shop-grid-8cols.html">8 Columns Mode</a></li>
-                                <li><a href="shop-list-mode.html">List Mode</a></li>
-                                <li><a href="shop-pagination.html">Pagination</a></li>
-                                <li><a href="shop-infinite-ajaxscroll.html">Infinite Ajaxscroll </a></li>
-                                <li><a href="shop-loadmore-button.html">Loadmore Button</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Variations 3
-                            </a>
-                            <ul>
-                                <li><a href="shop-category-grid-shop.html">Category Grid Shop</a></li>
-                                <li><a href="shop-category+products.html">Category + Products</a></li>
-                                <li><a href="shop-default-1.html">Shop Default 1 </a>
-                                </li>
-                                <li><a href="shop-default-2.html">Shop Default 2</a></li>
-                                <li><a href="shop-default-3.html">Shop Default 3</a></li>
-                                <li><a href="shop-default-4.html">Shop Default 4</a></li>
-                                <li><a href="shop-default-5.html">Shop Default 5</a></li>
-                                <li><a href="shop-default-6.html">Shop Default 6</a></li>
-                                <li><a href="shop-default-7.html">Shop Default 7</a></li>
-                                <li><a href="shop-default-8.html">Shop Default 8</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="product.html">Products</a>
-                    <ul>
-                        <li>
-                            <a href="#">Product Pages</a>
-                            <ul>
-                                <li><a href="product-simple.html">Simple Product</a></li>
-                                <li><a href="product-featured.html">Featured &amp; On Sale</a></li>
-                                <li><a href="product.html">Variable Product</a></li>
-                                <li><a href="product-variable-swatch.html">Variation Swatch
-                                        Product</a></li>
-                                <li><a href="product-grouped.html">Grouped Product </a></li>
-                                <li><a href="product-external.html">External Product</a></li>
-                                <li><a href="product-in-stock.html">In Stock Product</a></li>
-                                <li><a href="product-out-stock.html">Out of Stock Product</a></li>
-                                <li><a href="product-upsell.html">Upsell Products</a></li>
-                                <li><a href="product-cross-sell.html">Cross Sell Products</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Product Layouts</a>
-                            <ul>
-                                <li><a href="product-vertical.html">Vertical Thumb</a></li>
-                                <li><a href="product-horizontal.html">Horizontal Thumb</a></li>
-                                <li><a href="product-gallery.html">Gallery Type</a></li>
-                                <li><a href="product-grid.html">Grid Images</a></li>
-                                <li><a href="product-masonry.html">Masonry Images</a></li>
-                                <li><a href="product-sticky.html">Sticky Info</a></li>
-                                <li><a href="product-sticky-both.html">Left & Right Sticky</a></li>
-                                <li><a href="product-left-sidebar.html">With Left Sidebar</a></li>
-                                <li><a href="product-right-sidebar.html">With Right Sidebar</a></li>
-                                <li><a href="product-full.html">Full Width Layout </a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Product Features</a>
-                            <ul>
-                                <li><a href="product-sale.html">Sale Countdown</a></li>
-                                <li><a href="product-hurryup.html">Hurry Up Notification </a></li>
-                                <li><a href="product-attribute-guide.html">Attribute Guide </a></li>
-                                <li><a href="product-sticky-cart.html">Add Cart Sticky</a></li>
-                                <li><a href="product-thumbnail-label.html">Labels on Thumbnail</a>
-                                </li>
-                                <li><a href="product-more-description.html">More Description
-                                        Tabs</a></li>
-                                <li><a href="product-accordion-data.html">Data In Accordion</a></li>
-                                <li><a href="product-tabinside.html">Data Inside</a></li>
-                                <li><a href="product-video.html">Video Thumbnail </a>
-                                </li>
-                                <li><a href="product-360-degree.html">360 Degree Thumbnail </a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <a href="dogy-gear-shop.html">Products</a>
                 </li>
                 <li>
                     <a href="#">Pages</a>
                     <ul>
                         <li><a href="about-us.html">About</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
-                        <li><a href="account.html">Login</a></li>
-                        <li><a href="faq.html">FAQs</a></li>
-                        <li><a href="error-404.html">Error 404</a>
-                            <ul>
-                                <li><a href="error-404.html">Error 404-1</a></li>
-                                <li><a href="error-404-1.html">Error 404-2</a></li>
-                                <li><a href="error-404-2.html">Error 404-3</a></li>
-                                <li><a href="error-404-3.html">Error 404-4</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="coming-soon.html">Coming Soon</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="blog-classic.html">Blog</a>
-                    <ul>
-                        <li><a href="blog-classic.html">Classic</a></li>
-                        <li><a href="blog-listing.html">Listing</a></li>
-                        <li>
-                            <a href="#">Grid</a>
-                            <ul>
-                                <li><a href="blog-grid-2col.html">Grid 2 columns</a></li>
-                                <li><a href="blog-grid-3col.html">Grid 3 columns</a></li>
-                                <li><a href="blog-grid-4col.html">Grid 4 columns</a></li>
-                                <li><a href="blog-grid-sidebar.html">Grid sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Masonry</a>
-                            <ul>
-                                <li><a href="blog-masonry-2col.html">Masonry 2 columns</a></li>
-                                <li><a href="blog-masonry-3col.html">Masonry 3 columns</a></li>
-                                <li><a href="blog-masonry-4col.html">Masonry 4 columns</a></li>
-                                <li><a href="blog-masonry-sidebar.html">Masonry sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Mask</a>
-                            <ul>
-                                <li><a href="blog-mask-grid.html">Blog mask grid</a></li>
-                                <li><a href="blog-mask-masonry.html">Blog mask masonry</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="post-single.html">Single Post</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="element.html">Elements</a>
-                    <ul>
-                        <li>
-                            <a href="#">Elements 1</a>
-                            <ul>
-                                <li><a href="element-accordions.html">Accordions</a></li>
-                                <li><a href="element-alerts.html">Alert &amp; Notification</a></li>
-
-                                <li><a href="element-banner-effect.html">Banner Effect
-
-                                    </a></li>
-                                <li><a href="element-banner.html">Banner
-                                    </a></li>
-                                <li><a href="element-blog-posts.html">Blog Posts</a></li>
-                                <li><a href="element-breadcrumb.html">Breadcrumb
-                                    </a></li>
-                                <li><a href="element-buttons.html">Buttons</a></li>
-                                <li><a href="element-cta.html">Call to Action</a></li>
-                                <li><a href="element-countdown.html">Countdown
-                                    </a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Elements 2</a>
-                            <ul>
-                                <li><a href="element-counter.html">Counter </a></li>
-                                <li><a href="element-creative-grid.html">Creative Grid
-
-                                    </a></li>
-                                <li><a href="element-animation.html">Entrance Effect
-
-                                    </a></li>
-                                <li><a href="element-floating.html">Floating
-
-                                    </a></li>
-                                <li><a href="element-hotspot.html">Hotspot
-
-                                    </a></li>
-                                <li><a href="element-icon-boxes.html">Icon Boxes</a></li>
-                                <li><a href="element-icons.html">Icons</a></li>
-                                <li><a href="element-image-box.html">Image box
-
-                                    </a></li>
-                                <li><a href="element-instagrams.html">Instagrams</a></li>
-
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Elements 3</a>
-                            <ul>
-
-                                <li><a href="element-categories.html">Product Category</a></li>
-                                <li><a href="element-products.html">Products</a></li>
-                                <li><a href="element-product-banner.html">Products + Banner
-
-                                    </a></li>
-                                <li><a href="element-product-grid.html">Products + Grid
-
-                                    </a></li>
-                                <li><a href="element-product-single.html">Product Single
-
-                                    </a>
-                                </li>
-                                <li><a href="element-product-tab.html">Products + Tab
-
-                                    </a></li>
-                                <li><a href="element-single-product.html">Single Product
-
-                                    </a></li>
-                                <li><a href="element-slider.html">Slider
-
-                                    </a></li>
-                                <li><a href="element-social-link.html">Social Icons </a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Elements 4</a>
-                            <ul>
-                                <li><a href="element-subcategory.html">Subcategory
-
-                                    </a></li>
-                                <li><a href="element-svg-floating.html">Svg Floating
-
-                                    </a></li>
-                                <li><a href="element-tabs.html">Tabs</a></li>
-                                <li><a href="element-testimonials.html">Testimonials
-                                    </a></li>
-                                <li><a href="element-titles.html">Title</a></li>
-                                <li><a href="element-typography.html">Typography</a></li>
-                                <li><a href="element-vendor.html">Vendor
-
-                                    </a></li>
-                                <li><a href="element-video.html">Video
-
-                                    </a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="https://d-themes.com/buynow/riodehtml">Buy Riode!</a></li>
             </ul>
             <!-- End MobileMenu -->
         </div>
@@ -748,9 +507,9 @@
 	<div class="sticky-icons-wrapper">
 		<div class="sticky-icon-links">
 			<ul>
-				<li><a href="/" class="demo-toggle"><i class="fas fa-home"></i><span>Home</span></a></li>
+				<li><a href="./index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
 				<li><a href="about-us.html"><i class="fas fa-info-circle"></i><span>About Us</span></a></li>
-				<li><a href="tel:555-123-4567"><i class="fas fa-phone"></i><span>Contact</span></a></li>
+				<li><a href="tel:+1 (347) 258-2202"><i class="fas fa-phone"></i><span>Contact</span></a></li>
 				<li><a href="dogy-gear-shop.html"><i class="fas fa-shopping-cart"></i><span>Buy now!</span></a></li>
 			</ul>
 		</div>
